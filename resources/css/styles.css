@@ -1,0 +1,208 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Francois One', sans-serif;
+}
+
+
+
+.navigation nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    height: 64px;
+}
+
+nav .logo {
+    display: flex;
+}
+
+.logo p {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.logo span {
+    color: gray;
+    font-weight: normal;
+}
+
+.navigation .nav {
+    font-size: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav h4 {
+    padding-right: 16px;
+    font-weight: lighter;
+}
+
+
+/* Welcome section */
+
+.banner {
+    background-color: rgba(216, 210, 210, 0.815);
+    display: flex;
+}
+
+.banner .banner-image {
+    padding: 32px 12px 32px 24px;
+    width: 60%;
+}
+
+.banner .banner-info {
+    margin: auto;
+    position: relative;
+    padding: auto 12px;
+    justify-content: center;
+    color: gray;
+
+}
+
+.banner .banner-info h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+}   
+
+.banner .banner-info h2 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.banner .banner-info a {
+    position: relative;
+    text-align: center;
+    background-color: gray;
+    display: block;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 8px 0px;
+    color: white;
+}
+
+#start {
+    font-weight: lighter;
+    padding: 8px 0px;
+}
+
+
+/* Information section */
+
+.information {
+    display: flex;
+    padding: 32px 24px;
+}
+
+.info-left img {
+    max-width: 90%;    
+}
+
+.info-left #main {
+    padding-top: 32px;
+    font-size: 62px;
+    color: rgb(78, 78, 78);
+}
+
+.info-left #info {
+    padding-top: 24px;
+    font-size: 28px;
+    color: rgb(78, 78, 78);
+}
+
+.info-left #author {
+    padding-top: 50px;
+    font-size: 20px; 
+    color: rgb(78, 78, 78);  
+}
+
+.flex-container {
+    border-left: 1px solid lightgray;
+    justify-content: center;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container .item {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container img {
+    height: auto;
+    padding: 16px;
+    
+}
+
+.flex-container .first {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    justify-content: center;
+}
+
+.flex-container, h2, h4, p {
+    padding-bottom: 16px;
+    
+}
+
+.flex-container h2 {
+    font-size: 40px;
+}
+
+.flex-container h4 {
+    font-size: 30px;
+}
+
+.flex-container p {
+    font-size: 30px;
+    color: cornflowerblue;
+}
+
+/* Courses Section */
+
+.courses-container {
+    background-color: lightgray;
+    padding: 32px 0px
+}
+
+.courses-container header {
+    text-align: center;
+    font-size: 56px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+    justify-content: space-between;
+    margin: -32px 0px;
+
+}
+
+.courses img {
+    height: auto;
+}
+
+.courses .course {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0px;
+}
+
+.courses .course h2, p {
+    padding: 16px;
+}
+
+.courses p {
+    padding: 8px auto;
+    font-size: 22px;
+}
+
+.courses h2 {
+    font-size: 30px;
+}
