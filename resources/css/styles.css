@@ -94,10 +94,13 @@ nav .logo {
 .information {
     display: flex;
     padding: 32px 24px;
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
 }
 
-.info-left img {
-    max-width: 90%;    
+.info-left {
+    padding-right: 24px;
 }
 
 .info-left #main {
@@ -205,4 +208,128 @@ nav .logo {
 
 .courses h2 {
     font-size: 30px;
+}
+
+
+/* exhibit section */
+
+.exhibit {
+    width: 100%;
+}
+
+.exhibit header {
+    text-align: center;
+    font-size: 40px;
+    padding: 32px 0px;
+}
+
+.ex-content {
+    display: flex;
+}
+
+.ex-left {
+    display: block;
+    flex-basis: 60%;
+    padding: 0px 24px;
+}
+
+.ex-left h2 {
+    padding-top: 24px;
+    font-size: 32px;
+}
+
+.ex-left h6 {
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 32px;
+}
+
+.ex-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.ex-1 {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+}
+
+.ex-1 span {
+
+    flex-basis: 65%;
+}
+
+.ex-1 span h2 {
+    font-size: 40px;
+}
+
+.ex-1 span h6 {
+    font-size: 28px;
+}
+
+
+.ex-1 img {
+    padding: 16px;
+    height: auto;
+    flex-basis: 35%;
+}
+
+
+
+
+
+.ex-2 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.ex-2 img {
+    padding: 16px;
+    height: auto;
+    flex-basis: 35%;
+}
+
+.ex-2 span h2 {
+    font-size: 40px;
+}
+
+.ex-2 span h6 {
+    font-size: 28px;
+}
+
+.ex-2 span {
+
+    flex-basis: 65%;
+}
+
+/* footer section */
+
+.ending {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.ending p {
+    float: left;
+}
+
+.ending footer {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.ending  nav {
+    display: flex;
+    align-items: center;   
+    float: right; 
 }
