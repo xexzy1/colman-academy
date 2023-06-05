@@ -1,8 +1,39 @@
-* {
+body {
     text-decoration: none;
     margin: 0;
     padding: 0;
     font-family: 'Francois One', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    html, body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: fit-content;
+        align-items: center;
+        font-size: 0.30rem;
+        margin: auto;
+        flex-basis: 100%;
+    }    
+
+    img {
+        display: block;
+        height: auto;
+        max-width: 100% !important;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    body {
+        width: 100vw !important;
+    }
 }
 
 
@@ -46,11 +77,55 @@ nav .logo {
 .banner {
     background-color: rgba(216, 210, 210, 0.815);
     display: flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
 }
 
+@media only screen and (max-width:900px) {
+    .banner, .information, .courses-container, .exhibit .ending {
+        width: 100%;
+        flex-direction: column;
+    }
+    .banner .banner-image {
+        display: block;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .banner-info h1, .banner-info h2, .banner-info a {
+        background-color: rgba(216, 210, 210, 0.815);
+        max-width: 100%;
+        flex-basis: 100%;
+        font-size: 8rem !important;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .banner-info h1 {
+        padding: 32px 16px;
+    }
+
+    .banner-info h2 {
+        padding: 0px 16px;
+        font-size: 16px;
+    }
+
+    .banner-info a {
+        margin: 24px 16px 32px 16px;
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+
 .banner .banner-image {
-    padding: 32px 12px 32px 24px;
-    width: 60%;
+    padding: 32px 24px;
+    flex-basis: 60%;
 }
 
 .banner .banner-info {
@@ -90,6 +165,70 @@ nav .logo {
 
 
 /* Information section */
+
+@media only screen and (max-width: 900px) {
+
+    .information {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    
+    .information .info-left {
+        display: none;
+        flex-basis: 0%;
+    }
+
+    .flex-container .item img {
+        padding: 0%;
+        width: 100%;
+        height: auto;
+    }
+
+    .item .first {
+        display: block;
+        padding-left: 16px;
+        justify-content: center;
+        float: left;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px !important;
+        margin: 0px !important;
+        background-color: white !important;
+    }
+    .flex-container .item {
+        background-color: white;
+        padding: 16px;
+    }
+    .item h2 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .item h4 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .item a {
+        margin: 0px;
+        padding: 0px;
+    }
+    .item p {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.flex-container .item {
+    flex-direction: column;
+    padding: 16px;
+    flex-basis: 100%;    
+}
+
+
+
+
 
 .information {
     display: flex;
@@ -167,6 +306,51 @@ nav .logo {
 
 /* Courses Section */
 
+
+@media only screen and (max-width: 900px) {
+
+    .courses-container {
+        background-color: white !important; 
+        padding: 32px 0px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .courses-container header {
+        font-size: 42px !important;
+    }
+
+
+
+    .courses {
+        padding: 0px !important;
+        margin: 0px !important;
+        flex-direction: column;
+    }
+    .course h2 {
+        background-color: lightgray;
+        margin: 0px 0px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 22px !important;
+        letter-spacing: 2px;
+    }
+
+    .course {
+        margin: 0px !important;
+        padding: 0px 16px 8px 16px !important;
+    }
+
+    .course img {
+        display: none;
+        background-color: lightgray;
+}
+    .course p {
+        display: none;
+}
+
+}
+
 .courses-container {
     background-color: lightgray;
     padding: 32px 0px
@@ -212,6 +396,29 @@ nav .logo {
 
 
 /* exhibit section */
+
+@media only screen and (max-width:900px) {
+    .exhibit header {
+        padding-top: 32px !important;
+    }
+    
+    .ex-container {
+        display: none !important;
+    }
+
+    .ex-left h2 {
+        display: none;
+    }
+
+    .ex-left h6 {
+        display: none;
+    }
+
+    .ex-left {
+        flex-basis: 100% !important;
+        padding: 16px 0px 24px 0px !important;
+    }
+}
 
 .exhibit {
     width: 100%;
@@ -306,6 +513,21 @@ nav .logo {
 }
 
 /* footer section */
+
+@media only screen and (max-width:900px) {
+    .ending {
+        border-top: 0px solid lightblue !important;
+    }
+
+    .ending footer nav {
+        display: none;
+    }
+
+    .ending p {
+        font-size: 16px;
+        margin: 0px !important;
+    }
+}
 
 .ending {
     display: flex;
